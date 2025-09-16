@@ -13,7 +13,7 @@
         const wsUrl = urlParams.get('url');
 
         if (!wsUrl) {
-            log.textContent = 'Error: WebSocket URL missing. Add ?url=ws://localhost:8000/idle or ?url=ws://localhost:8000/active to the URL.';
+            log.textContent = 'Error: WebSocket URL missing. Add ?url=ws://{url}/idle or ?url=ws://{url}/active to the URL.';
         } else {
             const ws = new WebSocket(wsUrl);
 
